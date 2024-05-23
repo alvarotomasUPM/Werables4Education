@@ -48,7 +48,6 @@ void loop() {
   
   // Detectar si el estado ha cambiado de no presionado a presionado
   if (tapState == HIGH && tapPreviousState == LOW) {
-    Serial.println("Tap detected"); // Mostrar mensaje de depuración
     // Cambiar al siguiente color en la lista
     colorIndex = (colorIndex + 1) % NUM_COLORS;
     changeColor(colorIndex);
